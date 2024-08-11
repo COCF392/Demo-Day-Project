@@ -3,20 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Answer Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="thread.css">
 </head>
 <body>
-    <!-- This is the page the user is taken to after they have posted. 
-        Here, we'll need:
-        1. A navbar
-        2. Left side options
-        3. The user's post at the top
-        4. Responses underneath (usually smaller than the main post)
-        5. Voting buttons
-        6. Other fake accounts
-        5. CSS Detailing
-    -->
+    <main>
+        <div class="top-bar">
+            <h1>
+                My Forum
+            </h1>
+        </div>
+        <div class="header">
+            <h4 class="title">
+                I need math help!
+            </h4>
+            <div class="bottom">
+                <p class="timestamp">
+                    10/10/2023
+                </p>
+                <p class="comment-count">
+                    3 comments
+                </p>
+
+            </div>
+        </div>
+        <textarea id="comment-input"></textarea>
+        <button>add comment</button>
+        <div class="comments">
+            <div class="comment">
+                <div class="top-comment">
+                    <p class="user">
+                        Denny
+                    </p>
+                    <p class="comment-ts">
+                        11/2/23
+                    </p>
+                </div>
+                <div class="comment-count">
+                    lol u suck at math
+                </div>
+            </div>
+            <div class="comment">
+                <div class="top-comment">
+                    <p class="user">
+                        Mary
+                    </p>
+                    <p class="comment-ts">
+                        11/3/23
+                    </p>
+                </div>
+                <div class="comment-count">
+                    @Denny you live in SoHo, NYC
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
