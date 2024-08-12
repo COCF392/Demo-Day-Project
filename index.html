@@ -20,14 +20,9 @@
     -->
 
     <!-- Top navigation bar -->
-    <nav>
+    <nav class="main_boxes">
         <img src="images/placeholder_logo.png">
-        <select>
-            <option>Placeholder</option>
-            <option>Options</option>
-            <option>For</option>
-            <option>Schools</option>
-        </select>
+        <select></select>
         <input placeholder="search" type="text">
         <button>Sign Out</button>
         <img src="images/user_icon.png">
@@ -35,20 +30,29 @@
 
     <div id="home_box">
         <!-- Side navigation bar -->
-        <div id="side_nav">
-            <button class="side_buttons">Settings</button>
-            <button class="side_buttons">Home</button>
-            <button class="side_buttons">FAQ</button>
-            <button class="side_buttons">About</button>
-            <button class="side_buttons">Posts</button>
+        <div class="main_boxes move_left" id="side_nav">
+            <div id="carrot_div">
+                <p id="side_carrot">&gt;</p>
+            </div>
+            <div id="side_nav_buttons">
+                <button class="side_buttons">Settings</button>
+                <button class="side_buttons">Home</button>
+                <button class="side_buttons">FAQ</button>
+                <button class="side_buttons">About</button>
+                <button class="side_buttons">Posts</button>
+            </div>
         </div>
+
         <!-- Welcome text -->
         <div id="welcome_box">
             <h1>Welcome!</h1>
+            <h2 id="sub_header">You are currently in the ALBANY AVENUE ELEMENTARY SCHOOL forum.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nam error esse quod consequuntur iure voluptatem dignissimos excepturi aliquam minima. <br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus nulla asperiores eveniet fugiat id temporibus unde? Enim, quia id!</p>
             <h1>Got a question?</h1>
-            <button id="create_button">Create a post!</button>
+            <a href="answer.html">
+                <button id="create_button">Create a post!</button>
+            </a>
         </div>
     </div>
 
