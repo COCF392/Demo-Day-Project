@@ -4,13 +4,17 @@ html, body {
     height: 100%;
 }
 
+p {
+    white-space: pre;
+}
+
 body {
     margin: 0px;
     font-size: 20px;
 }
 
 /*Black border is to make visualizing the divs easier*/
-.main_boxes {
+.box_borders {
     border: 1px solid black;
 }
 
@@ -92,6 +96,43 @@ button {
     transform: rotate(180deg);
 }
 
-#side_carrot, button, select, input {
+#side_carrot, button, select {
     cursor: pointer;
+}
+
+/* Question and answer page stuff */
+#main_text_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+    font-size: 20px;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+#title_text_box {
+    height: 20px;
+}
+
+#body_text_box {
+    height: 300px;
+}
+
+#reply_text_box {
+    height: 40px;
+}
+
+#submit_button {
+    font-size: 20px;
+    width: 100px;
+}
+
+#voting_icon {
+    width: 30px;
 }

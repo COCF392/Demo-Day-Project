@@ -4,34 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="style.css">
     <script defer src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore-compat.js"></script>
 
     <!-- @NOTE initializing firebase -->
     <script src="firebase.js" defer></script>
-    <script src="index.js" defer></script>
+    <script src="question.js" defer></script>
 </head>
 <body>
+    <!-- Nav bar -->
+    <nav class="main_boxes">
+        <a href="index.html">
+            <img src="images/placeholder_logo.png">
+        </a>
+        <select></select>
+        <input placeholder="search" type="text">
+        <button>Sign Out</button>
+        <img src="images/user_icon.png">
+    </nav>
 
-    	<!-- This is the page where the user types a post. 
-    	Here, we'll need:
-    	1. A navbar
-    	2. Boxes to enter the title and content of the post
-    	    - What's entered here needs to be carried into the answer page
-    	3. Styling options for the text (if do-able)
-    	   - i.e. a small bar at the top of the box with options like bold, underline, italicize, etc.
-    	4. Post button
-    	5. CSS detailing
-    	-->
+    <!-- Main content of the page -->
+    <div id="main_text_box">
+        <div id="question_content">
+            <h1>Create Post</h1>
+            <h2 id="current_forum_header">Select a school to post in.</h2>
 
+            <br>
 
-    <div class="top-bar">
-        <h1>
-            My Forum
-        </h1>
+            <h3>Title</h3>
+            <form>
+                <textarea id="title_text_box" type="text"></textarea>
+            </form>
+
+            <br>
+
+            <h3>Body</h3>
+            <form>
+                <textarea id="body_text_box" type="text"></textarea>
+            </form>
+
+            <br>
+        </div>
+
+    <a href="answer.html">
+        <button id="submit_button">Submit</button>
+    </a>
+
     </div>
-    <ol id="posts">
-    </ol>
 </body>
 </html>

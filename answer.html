@@ -3,60 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="thread.css">
+    <title>Answer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="answer.js" defer></script>
 </head>
 <body>
-    <main>
-        <div class="top-bar">
-            <h1>
-                My Forum
-            </h1>
-        </div>
-        <div class="header">
-            <h4 class="title">
-                I need math help!
-            </h4>
-            <div class="bottom">
-                <p class="timestamp">
-                    10/10/2023
-                </p>
-                <p class="comment-count">
-                    3 comments
-                </p>
+    <!-- Nav bar -->
+    <nav class="main_boxes">
+        <a href="index.html">
+            <img src="images/placeholder_logo.png">
+        </a>
+        <select></select>
+        <input placeholder="search" type="text">
+        <button>Sign Out</button>
+        <img src="images/user_icon.png">
+    </nav>
 
+    <div id="home_box">
+        <!-- Side navigation bar -->
+        <div class="main_boxes move_left" id="side_nav">
+            <div id="carrot_div">
+                <p id="side_carrot">&gt;</p>
+            </div>
+            <div id="side_nav_buttons">
+                <button class="side_buttons">Settings</button>
+                <button class="side_buttons">Home</button>
+                <button class="side_buttons">FAQ</button>
+                <button class="side_buttons">About</button>
+                <button class="side_buttons">Posts</button>
             </div>
         </div>
-        <textarea id="comment-input"></textarea>
-        <button>add comment</button>
-        <div class="comments">
-            <div class="comment">
-                <div class="top-comment">
-                    <p class="user">
-                        Denny
-                    </p>
-                    <p class="comment-ts">
-                        11/2/23
-                    </p>
+
+        <div id="main_text_box">
+            <div id="question_content">
+                <!-- User post -->
+                <div>
+                    <img id="voting_icon" src="images/vote_icons.png">
+                    <img src="images/user_icon.png">
                 </div>
-                <div class="comment-count">
-                    lol u suck at math
+
+                <form>
+                    <textarea id="title_text_box" type="text">Title Placeholder</textarea>
+                </form>
+    
+                <br>
+    
+                <form>
+                    <textarea id="body_text_box" type="text">Body Placeholder</textarea>
+                </form>
+    
+                <br>
+                <hr>
+                <br>
+
+                <!-- Comment 1 -->
+                <div>
+                    <img id="voting_icon" src="images/vote_icons.png">
+                    <img src="images/user_icon.png">
                 </div>
-            </div>
-            <div class="comment">
-                <div class="top-comment">
-                    <p class="user">
-                        Mary
-                    </p>
-                    <p class="comment-ts">
-                        11/3/23
-                    </p>
+                <form>
+                    <textarea id="reply_text_box" type="text">Comment Placeholder #1</textarea>
+                </form>
+
+                <br>
+
+                <!-- Comment 2 -->
+                <div>
+                    <img id="voting_icon" src="images/vote_icons.png">
+                    <img src="images/user_icon.png">
                 </div>
-                <div class="comment-count">
-                    @Denny you live in SoHo, NYC
-                </div>
+                <form>
+                    <textarea id="reply_text_box" type="text">Comment Placeholder #2</textarea>
+                </form>
             </div>
         </div>
-    </main>
+    </div>
+
+
 </body>
 </html>
