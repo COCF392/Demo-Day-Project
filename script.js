@@ -1,8 +1,10 @@
-// This file is used by the page where the user inputs a question
+// references
 const schoolSelector = document.querySelector("select");
 const subHeaderText = document.getElementById("sub_header");
 const sideBarButton = document.getElementById("side_carrot");
 const sideNav = document.getElementById("side_nav");
+const welcomeBox = document.getElementById("welcome_box");
+const forumHeader = document.getElementById("current_forum_header");
 let schoolArray = [];
 
 fetch("https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/us-public-schools/records?limit=100&refine=state%3A%22NY%22")
@@ -27,8 +29,16 @@ fetch("https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/us-publ
         }
     })
 
+schoolSelector.addEventListener("input", () => {
+    subHeaderText.innerText = `You are currently in the ${schoolSelector.value} forum.`
+})
+
 // moving the side_bar left and right
 sideBarButton.addEventListener("click", () => {
     sideNav.classList.toggle("move_left");
     sideBarButton.classList.toggle("flip_carrot");
+})
+
+schoolSelector.addEventListener("input", () => {
+    forumHeader.innerText = `Posting in ${schoolSelector.value}`
 })
