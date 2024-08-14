@@ -22,30 +22,51 @@
 
     <!-- Main content of the page -->
     <div id="main_text_box">
-        <div id="question_content">
-            <h1>Create Post</h1>
-            <h2 id="current_forum_header">Select a school to post in.</h2>
-
-            <br>
-
-            <h3>Title</h3>
-            <form>
-                <textarea id="title_text_box" type="text"></textarea>
-            </form>
-
-            <br>
-
-            <h3>Body</h3>
-            <form>
-                <textarea id="body_text_box" type="text"></textarea>
-            </form>
-
-            <br>
+        <div class="main_boxes move_left" id="side_nav">
+            <div id="carrot_div">
+                <p id="side_carrot">&gt;</p>
+            </div>
+            <div id="side_nav_buttons">
+                <button class="side_buttons">Settings</button>
+                <button class="side_buttons">Home</button>
+                <button class="side_buttons">FAQ</button>
+                <button class="side_buttons">About</button>
+                <button class="side_buttons">Posts</button>
+            </div>
         </div>
 
-    <a href="answer.html">
-        <button id="submit_button">Submit</button>
-    </a>
+        <div id="main_question_box">
+            <div id="question_content">
+                <h1>Create Post</h1>
+                <h2 id="current_forum_header">Select a school to post in.</h2>
+
+                <br>
+
+                <!-- Title -->
+                <div id="title_header">
+                    <h3>Title</h3>
+                </div>
+                <form>
+                    <textarea id="title_input_box" type="text"></textarea>
+                </form>
+
+                <br>
+
+                <!-- Body -->
+                <div id="body_header">
+                    <h3>Body</h3>
+                </div>
+                <form>
+                    <textarea id="body_input_box" type="text"></textarea>
+                </form>
+
+            </div>
+        
+            
+            <a id="submit_button_box" href="answer.html">
+                <button id="submit_button">Submit</button>    
+            </a>
+        </div>
 
     </div>
 </body>
